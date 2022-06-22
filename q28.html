@@ -1,0 +1,23 @@
+<!-- What do you understand by pseudo-elements?
+
+Pseudo-elements provide special effects to some selectors. CSS finds use in applying styles in HTML markups. If additional markup or style is not feasible for a document, the pseudo-elements help by allowing extra markup without interfering with the original document.  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p::first-line {
+        color: #ff0000;
+        font-variant: small-caps;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      You can use the ::first-line pseudo-element to add a special effect to the
+      first line of a text. Some more text. And even more, and more, and more,
+      and more, and more, and more, and more, and more, and more, and more, and
+      more, and more.
+    </p>
+  </body>
+</html>

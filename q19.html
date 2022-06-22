@@ -1,0 +1,49 @@
+<!-- Explain responsive web design. 
+
+Responsive Design is a web page creation approach that uses flexible images, flexible layouts, and CSS media queries. This design approach aims to build web pages that detect the orientation and screen size of the visitors so that the layout can be changed accordingly.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #sidebar ul li a {
+        color: #900;
+        text-decoration: none;
+        padding: 3px 0;
+        display: block;
+      }
+
+      @media all and (max-width: 699px) and (min-width: 520px) {
+        #sidebar ul li a {
+          padding-left: 21px;
+          background: url(../images/email.png) left center no-repeat;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="nav">
+      <li>
+        <a
+          data-email="chriscoyier@gmail.com"
+          href="mailto:chriscoyier@gmail.com"
+          >Chris Coyier</a
+        >
+      </li>
+      <li>
+        <a data-email="elisabeth@moss.com" href="mailto:elisabeth@moss.com"
+          >Elisabeth Moss</a
+        >
+      </li>
+      <li>
+        <a data-email="amanda@righetti.com" href="mailto:amanda@righetti.com"
+          >Amanda Righetti</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

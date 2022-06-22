@@ -1,0 +1,44 @@
+<!-- What are CSS image scripts?
+
+A group of images placed into one image is a CSS image script. It can reduce load time and project multiple images into a single web page. 
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Udacity: CSS Sprites</title>
+    <link rel="stylesheet" href="CSSSprites.CSS" />
+
+    <style>
+          .spriteContainer{
+      background: url (udacityDoodleSprites.png) no-repeat;
+      }
+
+      .doodle1 {
+      width: 600px;
+      height: 780px;
+      display: inline-block; background-position: 0px 0px;
+      }
+      .doodle2 {
+      width: 600px;
+      height: 780px;
+      display: inline-block;
+      background-position: -600px 0px;
+      .doodle³ {
+      width: 600px;
+      height: 780px;
+      display: inline-block; background-position: -1250px 0px;
+    </style>
+  </head>
+  <body>
+    <h1>Udacity: Using Image Sprites</h1>
+    <hr />
+    <h2>The images below are taken from the same sprite file</h2>
+    <div class="spriteContainer doodle1"></div>
+    <div class="spriteContainer doodle2"></div>
+    <div class="spriteContainer doodle3"></div>
+  </body>
+</html>

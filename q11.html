@@ -1,0 +1,36 @@
+<!-- Define z-index.
+
+This is one of the most frequently asked CSS interview questions. Z-index is used to specify the stack order of elements that overlap each other. Its default value is zero and can take both negative and positive values. A higher z-index value is stacked above the lower index element. It takes the following values- auto, number, initial, and inherit.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #blue {
+        background-color: blue;
+        z-index: 2;
+      }
+
+      #red {
+        background-color: red;
+        z-index: 1;
+      }
+
+      #green {
+        background-color: green;
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="blue"></div>
+      <div class="box" id="red"></div>
+      <div class="box" id="green"></div>
+    </div>
+  </body>
+</html>

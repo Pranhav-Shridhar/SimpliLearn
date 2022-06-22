@@ -1,0 +1,25 @@
+<!-- How can you optimize the webpage for prints?
+
+Identify and control 'content areas' of the website. A website generally has a footer, header, sidebar, navbar, and main content area. Most of the work is done by controlling the content area. So, conquer print media without changing the website's integrity by using page breaks, creating a stylesheet for print, size your page for print, and avoid unnecessary HTML tables. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- For external stylesheet -->
+    <link media="print" href="print.css" />
+    <!-- For internal styling -->
+    <style>
+      @media print {
+        /* // Add print-specific styles here */
+      }
+      @media screen {
+        /* // Add screen-only styles here */
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

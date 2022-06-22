@@ -1,0 +1,42 @@
+<!-- Tell us about the use of the ruleset.
+
+The ruleset is used for the identification of selectors, which can be attached with other selectors. The two parts of a ruleset are:
+
+Declaration block: contains one or more semicolon-separated declarations
+Sector: indicates the HTML element needed to be styled -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        color: green;
+      }
+
+      /* Selector */
+      span {
+        /* Declaration-block */
+        background-color: purple;
+        color: white;
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 50px;
+      }
+
+      .divClass {
+        font-family: Sans-serif;
+      }
+
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="divClass">
+      <h1>GeeksforGeeks</h1>
+      <span>A Computer Science portal for Geeks</span>
+    </div>
+  </body>
+</html>

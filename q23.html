@@ -1,0 +1,38 @@
+<!-- What are mixins?
+
+A mixin is similar to a function block of code returning a single value—mixin output lines of Sass code that directly compiles into CSS styles. At the same time, the function returns a value that becomes the value for a CSS property or something that can be passed to another mixin. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sayHiMixin = {
+        sayHi() {
+          alert(`Hello ${this.name}`);
+        },
+        sayBye() {
+          alert(`Bye ${this.name}`);
+        },
+      };
+
+      // usage:
+      class User {
+        constructor(name) {
+          this.name = name;
+        }
+      }
+
+      // copy the methods
+      Object.assign(User.prototype, sayHiMixin);
+
+      // now User can say hi
+      new User("Dude").sayHi();
+    </script>
+  </body>
+</html>

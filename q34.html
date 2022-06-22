@@ -1,0 +1,30 @@
+<!-- Explain CSS specificity.
+
+CSS specificity is a rank or score that decides style declaration to be used to an element. ID selectors have high specificity, while universal selector * has low specificity. The four CSS categories that authorize the selector's specificity level are IDs, inline style, elements/pseudo-elements, and classes and attributes.  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Internal -->
+    <style>
+      body {
+        background-color: powderblue;
+      }
+      h1 {
+        color: green;
+      }
+      p {
+        color: pink;
+      }
+    </style>
+
+    <!-- External -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Inline -->
+    <h1 style="color: blue">A Blue Heading</h1>
+
+    <p style="color: red">A red paragraph.</p>
+  </body>
+</html>

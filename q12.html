@@ -1,0 +1,31 @@
+<!-- What are the benefits of CSS Sprites?
+
+With CSS sprites, loading multiple images is not an issue. 
+
+Blinking is not seen. 
+Advanced downloading of assets does not take place until needed.  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Sprite</title>
+    <style>
+      .sprite.gfg {
+        background: url("https://media.geeksforgeeks.org/wp-content/uploads/20220310121522/csssprites3-200x100.png")
+          no-repeat;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-position: -110px -10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1 style="color: green">GeeksforGeeks</h1>
+      <h3>Image Sprite</h3>
+    </div>
+    <div class="sprite gfg"></div>
+  </body>
+</html>

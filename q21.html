@@ -1,0 +1,32 @@
+<!-- When should you use translate () instead of absolute positioning?
+
+Translate is a CSS transform value. On changing opacity or transform, browser reflow or repaint is not triggered. Transform requires the browser to create a GPU layer for elements but using the CPU changes absolutes positioning properties. Translate () is more efficient and results in shorter paint times. On using translate (), element occupies original space, unlike in changing absolute positioning.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+      .position {
+        position: relative;
+        left: 50%;
+        background: red;
+      }
+      .transform {
+        transform: translateX(50%);
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box position"></div>
+    <div class="box transform"></div>
+  </body>
+</html>

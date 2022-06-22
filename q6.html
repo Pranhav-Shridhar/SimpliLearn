@@ -1,0 +1,30 @@
+<!-- How can CSS be integrated into an HTML page?
+
+There are three ways of integrating CSS into HTML: using style tags in the head section, using inline-styling, writing CSS in a separate file, and linking into the HTML page by the link tag.  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Internal -->
+    <style>
+      body {
+        background-color: powderblue;
+      }
+      h1 {
+        color: green;
+      }
+      p {
+        color: pink;
+      }
+    </style>
+
+    <!-- External -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Inline -->
+    <h1 style="color: blue">A Blue Heading</h1>
+
+    <p style="color: red">A red paragraph.</p>
+  </body>
+</html>

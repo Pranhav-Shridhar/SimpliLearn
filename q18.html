@@ -1,0 +1,22 @@
+<!-- Define contextual selectors.
+
+In CSS, contextual selectors allow developers to specify styles of different parts of the document. Styles can be assigned directly to specific HTML tags or create independent classes and assign tags to them. 
+-->
+
+<!-- For example, consider the following rules:
+
+  H1 { color: red }
+  EM { color: red }
+Although the intention of these rules is to add emphasis to text by changing its color, the effect will be lost in a case such as:
+
+<H1>This headline is <EM>very</EM> important</H1>
+We address this case by adding a contextual rule to the previous two that sets the text color to blue whenever an EM occurs anywhere within an H1:
+
+  H1 { color: red }
+  EM { color: red }
+  H1 EM { color: blue }
+The third rule will also match the following fragment:
+
+  <H1>This 
+     <SPAN class="myclass">headline is <EM>very</EM>
+     important</SPAN></H1> -->
